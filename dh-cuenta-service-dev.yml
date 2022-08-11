@@ -2,4 +2,10 @@ server:
   port: ${PORT:9998}
 message: Consumer configuration. Server is alive for DEV profile
 
+billetes:
+  - denominacion1: 100
+  - denominacion2: 200
+  - denominacion3: 500
+  - denominacion4: 1000
+
 
