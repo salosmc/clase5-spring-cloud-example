@@ -1,3 +1,7 @@
 message: Test configuration - is necesary to restart the app?
 
-test: test1,test2,test3
+billetes:
+  - denominacion1: 100
+  - denominacion2: 200
+  - denominacion3: 500
+  - denominacion4: 1000
