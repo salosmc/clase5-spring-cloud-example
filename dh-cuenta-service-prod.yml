@@ -1,9 +1,3 @@
 server:
   port: ${PORT:9999}
 message: Consumer configuration. Server is alive for PROD profile
-
-billetes:
-  - denominacion1: 100
-  - denominacion2: 200
-  - denominacion3: 500
-  - denominacion4: 1000
