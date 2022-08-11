@@ -1,7 +1,1 @@
 message: Test configuration - is necesary to restart the app?
-
-billetes:
-  - denominacion1: 100
-  - denominacion2: 200
-  - denominacion3: 500
-  - denominacion4: 1000
