@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8080}
+  port: 8080
   
 spring:
   cloud:
@@ -16,4 +16,5 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka
+      defaultZone: http://eureka:8761/eureka
+      #localhost
