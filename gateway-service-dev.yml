@@ -10,9 +10,13 @@ spring:
           predicates: #RReglas de análisis de una request
             - Path=/movies/**
         - id: playlistRoute #Identificando la ruta del service de producto
-        uri: http://localhost:8084/ #URL donde se hará el redirect segun el predicate definido
-        predicates: #RReglas de análisis de una request
-          - Path=/playlists/**
+          uri: http://localhost:8084/ #URL donde se hará el redirect segun el predicate definido
+          predicates: #RReglas de análisis de una request
+            - Path=/playlists/**
+        - id: catalogRoute #Identificando la ruta del service de producto
+          uri: http://localhost:8086/ #URL donde se hará el redirect segun el predicate definido
+          predicates: #RReglas de análisis de una request
+            - Path=/catalogs/**
 eureka:
   client:
     service-url:
