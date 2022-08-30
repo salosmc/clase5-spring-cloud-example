@@ -8,24 +8,13 @@ spring:
         defaultZone: http://localhost:8761/eureka
   datasource:
     driver-class-name: org.h2.Driver
-    #driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;
-    #url: jdbc:mysql://localhost:3306/entregable_back?createDatabaseIfNotExist=true
     username: sa
-    #username: root
     password: sa
-    #password: password
-    #initialization-mode: always
   sql:
     init:
       data-locations: classpath:movie-service.sql
   jpa:
-    #defer-datasource-initialization: true
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
-
-
-#spring.datasource.initialization-mode=always
-
-#spring.jpa.defer-datasource-initialization=true
-#spring.jpa.show-sql=true
