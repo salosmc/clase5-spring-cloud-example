@@ -7,10 +7,14 @@ spring:
       service-url:
         defaultZone: http://localhost:8761/eureka
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;
-    username: sa
-    password: sa
+    #driver-class-name: org.h2.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;
+    url: jdbc:mysql://localhost:3306/digital_booking?createDatabaseIfNotExist=true
+    #username: sa
+    username: root
+    #password: sa
+    password: password
   sql:
     init:
       data-locations: classpath:movie-service.sql
