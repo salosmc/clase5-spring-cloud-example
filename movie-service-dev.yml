@@ -15,10 +15,20 @@ spring:
     username: root
     #password: sa
     password: password
+    
+    initialization-mode: always
+    
   sql:
     init:
       data-locations: classpath:movie-service.sql
+      
   jpa:
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
+
+
+#spring.datasource.initialization-mode=always
+
+#spring.jpa.defer-datasource-initialization=true
+#spring.jpa.show-sql=true
